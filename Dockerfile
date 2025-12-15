@@ -1,8 +1,8 @@
 FROM ubuntu:24.04
 WORKDIR /app
-COPY ../src/mini.c .
+COPY ../src/* .
 RUN apt update
 RUN apt install -y gcc
-RUN gcc mini.c -o mini
+RUN gcc mini.c env.c -o mini
 ENV MESSAGE="Good, Night!"
 CMD  ["./mini"]
