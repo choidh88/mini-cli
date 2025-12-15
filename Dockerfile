@@ -1,6 +1,6 @@
 FROM ubuntu:24.04
 WORKDIR /app
-COPY ../src/mini.c .
+COPY ../src/* .
 RUN apt update
 RUN apt install -y gcc
 RUN gcc mini.c -o mini
