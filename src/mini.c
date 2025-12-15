@@ -3,7 +3,7 @@
 #include "env.h"
 
 int main() {
-    printf("Hello, World!\n");
+    printf("Hello, %s!\n", getUserEnv());
     printf("This is your message: \"%s\"\n", getMessageEnv());
 
     return 0;

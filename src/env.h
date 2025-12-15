@@ -9,4 +9,10 @@ char *getMessageEnv() {
     return result;
 }
 
+char *getUserEnv() {
+    char *result = getenv("USER");
+    if (result == NULL) return "(USER IS UNKNOWN)";
+    return result;
+}
+
 #endif
