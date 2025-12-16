@@ -158,7 +158,7 @@ docker run --rm mini-cli
 선택한 라이선스: Unlicense
 
 ```
-본 프로젝트는 Unlicense를 적용합니다.
+본 프로젝트는 Unlicense 라이센스를 적용합니다.
 ```
 
 ---
