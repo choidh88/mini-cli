@@ -6,8 +6,6 @@
 
 # 🛠️ Mini CLI Tool Project
 
-> 작성 요령: 간단한 CLI 프로그램을 제작하고, Linux 실행 및 Docker 패키징, GitHub 버전관리 실습을 수행한 프로젝트입니다. <- 작성 완료 후 삭제
-
 &nbsp;해당 CLI 프로그램은 `Dockerfile` 내 `ENV`로 설정된 환경변수 `MESSAGE`를 가져와 출력하여 인사하는 프로그램입니다. 환경변수 `USER`가 존재하는 경우 이 또한 출력합니다.<br>
 &nbsp;로컬 환경에서는 WSL을 이용했습니다. Visual Studio Code를 이용했으며 Linux 환경에서 gcc, Docker 등을 통해 개발했습니다. gcc로 컴파일하고 Docker를 통해 이미지를 생성하고 실행 가능하도록 했습니다.<br>
 &nbsp;또한 git과 Github를 이용하고 버전 관리함으로써 관련 실습을 진행했습니다. git의 `commit`, `branch`, `push` 등의 기능을 실습하는 등, '오픈소스소프트웨어 이해와 실습' 전공 과목에서 배운 바를 활용했습니다.
@@ -15,8 +13,6 @@
 ---
 
 ## 📁 프로젝트 구조
-
-> 작성 요령: 프로젝트 구조 작성(아래는 권장 구조) <- 작성 완료 후 삭제
 
 ```
 mini-cli/
@@ -41,7 +37,6 @@ mini-cli/
 
 
 ### ✔ 코드
-> 작성 요령: 소스 코드 작성  <- 작성 완료 후 삭제
 
 * src/mini.c<br>
 프로그램의 실질적인 수행을 담당하는 코드
@@ -94,8 +89,6 @@ char *getUserEnv() {
 
 ## 🧪 2. Linux 실행 결과
 
-> 작성 요령: 개발 환경 설치 과정 및 실행 과정 작성 <- 작성 완료 후 삭제
-
 ### ✔ 실행 명령어
 ```bash
 gcc src/mini.c src/env.c -o mini
@@ -110,8 +103,6 @@ gcc src/mini.c src/env.c -o mini
 
 ## 3. Dockerfile 및 실행 결과
 
-> 작성 요령: Dockerfile 내용 작성 <- 작성 완료 후 삭제
-
 ### ✔ Dockerfile
 ```Dockerfile
 FROM ubuntu:24.04
@@ -123,8 +114,6 @@ RUN gcc mini.c env.c -o mini
 ENV MESSAGE="Good, Night!"
 CMD  ["./mini"]
 ```
-
-> 작성 요령: 이미지 빌드 과정 및 이미지 실행 과정 작성(화면 캡쳐) <- 작성 완료 후 삭제
 
 ### ✔ Docker 이미지 빌드
 ```bash
@@ -143,8 +132,6 @@ docker run --rm mini-cli
 ---
 
 ## 4. GitHub 버전관리 내역
-
-> 작성 요령: 의미 있는 커밋 메시지 및 브랜치 사용 <- 작성 완료 후 삭제
 
 ### 체크리스트
 - [x] Commit 5회 이상  
@@ -178,8 +165,6 @@ docker run --rm mini-cli
 
 ## 6. 고찰
 
-> 작성 요령: 아래의 내용을 자유롭게 작성 <- 작성 완료 후 삭제
-
 - 배운 점:  
   * git을 통해 버전 관리를 할 수 있었다.  
     특히 어려웠던 기능인 `merge`를 실습하면서 병합과 충돌에 대해 이해할 수 있었다.
@@ -204,8 +189,6 @@ docker run --rm mini-cli
 ---
 
 ## 7. 참고 자료
-
-> 작성 요령: 과젱에 참고한 레퍼런스가 있다면 작성(아래는 예시) <- 작성 완료 후 삭제
 
 - 노서영, 신재혁, 유현진, 『오픈소스와 리눅스』, 홍릉, 2025.  
 - https://docs.docker.com/  
