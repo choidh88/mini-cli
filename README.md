@@ -38,7 +38,7 @@ mini-cli/
 
 ### ✔ 코드
 
-* src/mini.c<br>
+* `src/mini.c`<br>
 프로그램의 실질적인 수행을 담당하는 코드
 ```c
 #include <stdio.h>
@@ -53,7 +53,7 @@ int main() {
 }
 ```
 
-* src/env.h<br>
+* `src/env.h`<br>
 환경변수 `MESSAGE`와 `USER`를 가져오는 함수의 헤더를 정의한 코드
 ```c
 #ifndef __ENV_H__
@@ -66,7 +66,7 @@ char *getUserEnv();
 #endif
 ```
 
-* src/env.c<br>
+* `src/env.c`<br>
 환경변수 `MESSAGE`와 `USER`를 가져오는 함수를 구현한 코드
 ```c
 #include "env.h"
@@ -183,7 +183,8 @@ docker run --rm mini-cli
   * merge할 때 충돌이 발생하는 것에 대처할 수 있었다.  
     이전에는 충돌이 발생하면 당황해서 대처할 수 없었기 때문이다.
 - 개선하고 싶은 점:  
-  * github에 있는 `Compare & Pull Request`에 대해 더 알고 싶다.
+  * github에 있는 `Compare & Pull Request`에 대해 더 알고 싶다.  
+    이를 통해 (협업 시) 효율적으로 github를 관리하는 방법을 알아 프로젝트를 개선해 나가고 싶다.
   * 지금은 단독으로 프로그램을 만들었으나 협업 시 어떻게 git을 이용하는지 알고 싶다.
   * docker 컨테이너를 여럿 만들어 마이크로서비스를 구현하는 방법을 알고 싶다.
 
@@ -191,7 +192,7 @@ docker run --rm mini-cli
 
 ## 7. 참고 자료
 
-- 노서영, 신재혁, 유현진, 『오픈소스와 리눅스』, 홍릉, 2025.  
+- [노서영, 신재혁, 유현진, 『오픈소스와 리눅스』, 홍릉, 2025.](https://product.kyobobook.co.kr/detail/S000217467814)  
 - https://docs.docker.com/  
 - https://gcc.gnu.org/  
 - https://choosealicense.com/  
